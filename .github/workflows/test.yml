@@ -19,8 +19,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - uses: ./
+    - uses: michael-crawford/open-issue@v1
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         title: 'My Issue (Commit: $GITHUB_SHA)'
