@@ -27,4 +27,3 @@ jobs:
         body: My Issue Body
         assignees: |
           michael-crawford
-          cayman-crawford
