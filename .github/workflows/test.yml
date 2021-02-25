@@ -23,7 +23,7 @@ jobs:
     - uses: ./
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
-        title: 'My Issue (Commit: $GITHUB_SHA)'
-        body: My Issue Body
+        title: My Issue (Commit ${{ github.sha }})
+        body: My Issue Body for Commit ${{ github.sha }}
         assignees: |
           michael-crawford
