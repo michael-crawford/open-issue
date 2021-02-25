@@ -22,4 +22,8 @@ jobs:
     - uses: actions/checkout@v2
     - uses: ./
       with:
-        milliseconds: 1000
+        token: ${{ secrets.GITHUB_TOKEN }}
+        title: My Issue (${{ github.event.head_commit.timestamp }})
+        body: My Issue Body for Commit ${{ github.sha }}
+        assignees: |
+          michael-crawford
